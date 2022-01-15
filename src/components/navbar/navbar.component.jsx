@@ -1,15 +1,20 @@
 import React from 'react';
 import './navbar.styles.scss';
+import logo from '../../assets/logo.png';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return(
         <div className="navbar">
             <div className="leftSide">
-                leftSide
+                <img src={logo} />
             </div>
             
             <div className="rightSide">
-                rightSide
+                <Link to="/" >Home</Link>
+                <Link to="/" >Menu</Link>
+                <Link to="/" >About</Link>
+                <Link to="/" >Contact</Link>
             </div>
         </div>
     );
